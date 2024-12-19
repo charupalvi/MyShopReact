@@ -1,0 +1,84 @@
+/* General form container */
+.registration-container {
+  max-width: 350px;   /* Reduced width */
+  margin: 20px auto;
+  padding: 20px;      /* Reduced padding */
+  background-color: #ffffff;
+  border-radius: 8px; /* Slightly smaller radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 24px;   /* Slightly smaller header */
+}
+
+/* Form fields styling */
+.form-group {
+  margin-bottom: 10px;  /* Reduced spacing between fields */
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;   /* Reduced label spacing */
+  color: #555;
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;        /* Reduced padding for inputs */
+  font-size: 14px;     /* Smaller font size */
+  border: 1px solid #ccc;  /* Thinner border */
+  border-radius: 6px;  /* Slightly smaller border radius */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;  /* Smaller font size for checkbox label */
+  color: black;
+}
+
+.checkbox-container input {
+  margin-right: 8px;  /* Reduced spacing */
+}
+
+/* Button styling */
+.submit-button {
+  width: 100%;
+  padding: 10px;       /* Reduced padding */
+  font-size: 14px;     /* Smaller font size */
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #2575fc;
+}
+
+/* Success message */
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;   /* Smaller font size */
+}
+

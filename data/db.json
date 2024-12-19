@@ -1,0 +1,113 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 16",
+      "category": "mobile",
+      "price": 90000,
+      "description": "The latest iPhone with advanced A17 chip, stunning display, and enhanced battery life."
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24",
+      "category": "mobile",
+      "price": 85000,
+      "description": "A flagship Android smartphone featuring a powerful processor, dynamic AMOLED display, and pro-grade cameras."
+    },
+    {
+      "id": "3",
+      "name": "MacBook Pro 14\"",
+      "category": "laptop",
+      "price": 180000,
+      "description": "Apple's powerful M2 Pro chip, 14-inch Retina display, and long-lasting battery for professionals."
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "category": "laptop",
+      "price": 160000,
+      "description": "A sleek, high-performance laptop with an Intel i9 processor, stunning 4K display, and robust build."
+    },
+    {
+      "id": "5",
+      "name": "Sony WH-1000XM5",
+      "category": "headphones",
+      "price": 30000,
+      "description": "Premium noise-canceling wireless headphones with exceptional sound quality and comfort."
+    },
+    {
+      "id": "6",
+      "name": "Apple Watch Series 9",
+      "category": "wearable",
+      "price": 45000,
+      "description": "Next-gen smartwatch with health tracking, seamless connectivity, and a bright always-on display."
+    },
+    {
+      "id": "7",
+      "name": "Canon EOS R6",
+      "category": "camera",
+      "price": 200000,
+      "description": "A high-performance mirrorless camera with 20MP full-frame sensor and 4K video recording."
+    },
+    {
+      "id": "8",
+      "name": "GoPro HERO11 Black",
+      "category": "camera",
+      "price": 50000,
+      "description": "An action camera with 5.3K video, HyperSmooth stabilization, and waterproof up to 33ft."
+    },
+    {
+      "id": "9",
+      "name": "LG OLED C2 55\"",
+      "category": "television",
+      "price": 120000,
+      "description": "55-inch OLED TV with stunning 4K resolution, Dolby Vision, and immersive sound experience."
+    },
+    {
+      "id": "10",
+      "name": "Nintendo Switch OLED",
+      "category": "gaming_console",
+      "price": 35000,
+      "description": "Portable gaming console with a vibrant OLED screen, enhanced audio, and versatile play modes."
+    }
+  ],
+  "users": [
+    {
+      "id": "244d",
+      "username": "charu",
+      "email": "charu@gmail.com",
+      "address": "Thane",
+      "country": "India",
+      "accepted": true
+    },
+    {
+      "id": "2e1c",
+      "username": "Abhishek",
+      "email": "abhi@gmail.com",
+      "address": "Bhandup",
+      "country": "India",
+      "accepted": true
+    },
+    {
+      "id": "181c",
+      "username": "",
+      "email": "",
+      "address": "",
+      "country": "",
+      "accepted": false
+    }
+  ],
+  "customer": [
+    {
+      "id": "8e97",
+      "username": "charu",
+      "email": "charu@gmail.com"
+    },
+    {
+      "id": "b40e",
+      "username": "cp1",
+      "email": "cp@gmail.com",
+      "accepted": false
+    }
+  ]
+}

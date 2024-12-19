@@ -1,0 +1,108 @@
+/* h3{
+    color: tomato;
+}
+h2{
+    color:royalblue
+}
+.product-list {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.product-list ul li{
+    list-style-type: none;
+    border: 1px solid rgba(36, 59, 69, 0.114);
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 94, 94);
+}
+
+.desc{
+    text-align: justify;
+}
+
+.filter-button{
+    display: flex;
+    gap: 5px;
+}
+
+.filter-button button{
+    background-color: rgb(86, 186, 252);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filter-button button:hover{
+    background-color: chocolate;
+}
+
+.filter-button button.active {
+    background-color: chocolate;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);  
+  } */
+
+
+  h3 {
+    color: tomato;
+  }
+  h2 {
+    color: royalblue;
+  }
+  .product-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .desc {
+    text-align: justify;
+  }
+  
+  .filter-button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .filter-button button {
+    background-color: rgb(86, 186, 252);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button button:hover {
+    background-color: chocolate;
+  }
+  
+  .filter-button button.active {
+    background-color: chocolate;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+  }
+  
+  /* Card Styling */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    color: royalblue;
+  }
+  
+  button {
+    font-size: 16px;
+  }
+  

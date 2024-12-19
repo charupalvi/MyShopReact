@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Light Theme */
+body.light {
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body.light .nav-link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body.light .nav-link:hover {
+  background-color: #ffc107;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body.light .product-card {
+  background-color: white;
+}
+
+body.light .product-card button {
+  background-color: #007bff;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+body.dark .nav-link {
+  color: #f1f1f1;
+}
+
+body.dark .nav-link:hover {
+  background-color: #444;
+}
+
+body.dark .product-card {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+body.dark .product-card button {
+  background-color: #ff6347;
+}
+
+/* Heading Styles */
+h3 {
+  color: tomato;
+}
+
+h2 {
+  color: royalblue;
+}
+
+/* Product List Styles */
+.product-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-list ul li {
+  list-style-type: none;
+  border: 1px solid rgba(36, 59, 69, 0.114);
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(95, 94, 94);
+  transition: transform 0.3s ease;
+}
+
+.product-list ul li:hover {
+  transform: translateY(-5px);
+}
+
+.desc {
+  text-align: justify;
+}
+
+/* Filter Button Styles */
+.filter-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter-button button {
+  background-color: rgb(86, 186, 252);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button button:hover {
+  background-color: chocolate;
+}
+
+.filter-button button.active {
+  background-color: chocolate;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.6); /* Optional: Add a subtle glow */
+}
+
+
+
+/* Navbar Styling */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%); /* Dynamic gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for a modern look */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8); /* Slightly muted white */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 153, 0, 0.9); /* Bright orange */
+  color: #fff;
+  transform: scale(1.1); /* Subtle scale effect */
+  box-shadow: 0 4px 6px rgba(255, 153, 0, 0.4); /* Soft glow */
+}
+
+.nav-link.active {
+  background-color: #28a745; /* Green for active */
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.4); /* Glow effect for active */
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #28a745, #218838); /* Gradient button */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+  background: linear-gradient(90deg, #218838, #1e7e34); /* Darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 4px 8px rgba(33, 136, 56, 0.4); /* Glow effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .theme-toggle-btn {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 80%;
+    margin: 10px 0;
   }
 }

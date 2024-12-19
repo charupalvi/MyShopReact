@@ -1,0 +1,92 @@
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;  /* Adjust as needed */
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;  /* Adds spacing between checkbox and label */
+  transform: scale(1.2);  /* Optional: Adjust checkbox size */
+}
+
+.checkbox-label {
+  font-size: 14px;  /* Adjust font size as needed */
+}
+
+/* General container styles */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"].input-error,
+input[type="email"].input-error {
+  border-color: red;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 12px;      /* Set the size to small */
+  margin-top: 4px;
+}
+
+/* Checkbox group styling */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;  /* Add spacing between checkbox and label */
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Submit button styling */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success message styling */
+.success-message {
+  color: green;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
